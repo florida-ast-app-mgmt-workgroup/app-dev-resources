@@ -1,0 +1,28 @@
+'use strict';
+  
+var AWS = require('aws-sdk');
+ 
+AWS.config.update({
+  accessKeyId: '',
+  secretAccessKey: '',
+  region: 'us-east-1'
+});
+ 
+var EC2 = new AWS.EC2({apiVersion: '2016-11-15'});
+ 
+var params = { };
+ 
+ EC2.describeInstances(params, function(err, data) {
+ 
+   if (err) {
+      console.log(err, err.stack);
+   } else {
+      if (data.Reservations[0].Instances) {
+        data.Reservations[0].Instances.forEach(function(instance) {
+          console.log(instance);
+        });
+      } else {
+        console.log('no instances');
+      }
+   }
+});
