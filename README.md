@@ -1,8 +1,12 @@
-# august-2018
-AST Application Development &amp; Management Workgroup - August 2018
+# Application Management Resources
+
+![AST Logo](./images/AST-logo-small.jpg)
+
+Data management workgroup presentations, training topics, and resources.
+
+Office of the Chief Data Officer:  https://www.ast.myflorida.com/chief-data-officer/
 
 
-# additional resources
 
 Philip Roberts: What the heck is the event loop anyway? | JSConf EU
 https://youtu.be/8aGhZQkoFbQ
